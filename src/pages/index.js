@@ -1,7 +1,14 @@
-import FAQSection from '@/Components/FAQSection'
-import FooterNav from '@/Components/FooterNav'
-import HeroSection from '@/Components/HeroSection'
-import NavBar from '@/Components/NavBar'
+import FooterNav from '@/Components/common/FooterNav'
+import NavBar from '@/Components/common/NavBar'
+import Clients from '@/Components/home/Clients'
+import FAQSection from '@/Components/home/FAQSection'
+import HeroSection from '@/Components/home/HeroSection'
+import HowToSetup from '@/Components/home/HowToSetup'
+import Integrations from '@/Components/home/Integration'
+import PricingSection from '@/Components/home/PricingSection'
+import ReviewsCarousel from '@/Components/home/Reviews'
+import SetUPTime from '@/Components/home/SetUPTime'
+import TryIt from '@/Components/home/TryIt'
 import Head from 'next/head'
 
 
@@ -17,7 +24,14 @@ export default function Home() {
       <main>
         <NavBar />
         <HeroSection />
+        <SetUPTime />
+        <Clients />
+        <HowToSetup />
+        <TryIt />
+        <ReviewsCarousel />
+        <Integrations />
         <FAQSection />
+        <PricingSection />
         <FooterNav />
       </main>
     </>
