@@ -2,7 +2,6 @@ import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
 import { SwipeableDrawer } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
-import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -10,7 +9,6 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
-import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
@@ -18,23 +16,8 @@ const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
-    const [anchorElNav, setAnchorElNav] = useState(null);
-    const [anchorElUser, setAnchorElUser] = useState(null);
-
-    // const handleOpenNavMenu = (event) => {
-    //     setAnchorElNav(event.currentTarget);
-    // };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    // const handleCloseNavMenu = () => {
-    //     setAnchorElNav(null);
-    // };
     const anchor = 'left';
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+
     const [state, setState] = useState({
         left: false,
     });
@@ -52,7 +35,7 @@ function NavBar() {
         setState({ ...state, [anchor]: open });
     };
     return (
-        <AppBar position="static">
+        <AppBar sx={{ backgroundColor: "#9f4923" }} position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -87,7 +70,7 @@ function NavBar() {
                         </IconButton>
                         <Menu
                             id="menu-appbar"
-                            anchorEl={anchorElNav}
+                            // anchorEl={anchorElNav}
                             anchorOrigin={{
                                 vertical: 'bottom',
                                 horizontal: 'left',
@@ -97,7 +80,7 @@ function NavBar() {
                                 vertical: 'top',
                                 horizontal: 'left',
                             }}
-                            open={Boolean(anchorElNav)}
+                            // open={Boolean(anchorElNav)}
                             onClose={toggleDrawer}
                             sx={{
                                 display: { xs: 'block', md: 'none' },
@@ -110,11 +93,25 @@ function NavBar() {
                                 onOpen={toggleDrawer(anchor, true)}
                             >
                                 <Box
-                                    sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+                                    sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 }}
                                     role="presentation"
                                     onClick={toggleDrawer(anchor, false)}
                                     onKeyDown={toggleDrawer(anchor, false)}
                                 >
+                                    <div style={{ textAlign: 'right', backgroundColor: '#9f4923', }}>
+                                        <Button
+                                            sx={{
+                                                display: 'inline-block',
+                                                color: 'white',
+                                                padding: '8px 16px',
+                                                borderRadius: '4px',
+                                            }}
+                                        >
+                                            X
+                                        </Button>
+                                    </div>
+
+
                                     {pages.map((page) => (
                                         <MenuItem key={page} onClick={toggleDrawer}>
                                             <Typography textAlign="center">{page}</Typography>
@@ -157,37 +154,14 @@ function NavBar() {
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                        </Tooltip>
-                        <Menu
-                            sx={{ mt: '45px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Button sx={{ my: 2, color: 'white' }}>Start Free Trial</Button>
+                            <Button sx={{ my: 2, color: 'white', display: { xs: 'none', md: 'block' } }}>Registration</Button>
+                        </div>
                     </Box>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 }
 export default NavBar;
