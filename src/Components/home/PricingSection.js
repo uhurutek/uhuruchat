@@ -8,6 +8,7 @@ import CardHeader from "@mui/material/CardHeader";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 
 
 const tiers = [
@@ -38,7 +39,8 @@ const tiers = [
         ],
         buttonText: "Get started",
         buttonVariant: "contained",
-        backgroundColor: '#9f4923',
+        backgroundColor: '#d76227',
+        HBackgroundColor: '#9f4923',
         color: 'dark',
     },
     {
@@ -149,13 +151,19 @@ export default function PricingSection() {
                                     </ul>
                                 </CardContent>
                                 <CardActions>
-                                    <Button sx={{
-                                        borderColor: '#9f4923',
-                                        color: tier.color,
-                                        backgroundColor: tier.backgroundColor,
-                                    }} fullWidth variant={tier.buttonVariant}>
-                                        {tier.buttonText}
-                                    </Button>
+                                    <Link href="/registration" style={{ textDecoration: 'none', width: '100%' }}>
+                                        <Button sx={{
+                                            borderColor: '#9f4923',
+                                            color: tier.color,
+                                            backgroundColor: tier.backgroundColor,
+                                            '&:hover': {
+                                                borderColor: '#9f4923',
+                                                backgroundColor: tier.HBackgroundColor,
+                                            },
+                                        }} fullWidth variant={tier.buttonVariant}>
+                                            {tier.buttonText}
+                                        </Button>
+                                    </Link>
                                 </CardActions>
                             </Card>
                         </Grid>

@@ -19,7 +19,7 @@ const Integrations = () => {
     ];
 
     return (
-        <Container maxWidth="lg" sx={{ pb: 8, pt: 8 }}>
+        <Container maxWidth="lg" sx={{ pb: 10, pt: 8 }}>
             <Typography
                 variant="h3"
                 align="center"
