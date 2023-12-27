@@ -27,7 +27,7 @@ const ReviewsCarousel = () => {
     const classes = useStyles();
 
     return (
-        <Container sx={{ mb: 8 }}>
+        <Container sx={{ mb: 8, mt: 8 }}>
             <Typography
                 variant="h3"
                 align="center"

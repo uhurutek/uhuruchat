@@ -5,29 +5,22 @@ const useStyles = makeStyles((theme) => ({
     card: {
         maxWidth: 400,
         margin: 'auto',
-        // marginBottom: theme.spacing(3),
         backgroundColor: '#f9f9f9',
     },
     content: {
-        // paddingBottom: `${theme.spacing(2)} !important`,
         display: 'flex',
         alignItems: 'center',
     },
     rating: {
         display: 'flex',
         alignItems: 'center',
-        // gap: theme.spacing(1),
-        // marginBottom: theme.spacing(1),
     },
-    avatar: {
-        // marginRight: theme.spacing(2),
-    },
+
 }));
 
 const ReviewCard = ({ name, comment, rating }) => {
     const classes = useStyles();
 
-    // Generating random avatar images for demonstration purposes
     const avatarUrl = `https://i.pravatar.cc/150?u=${name}`;
 
     return (
