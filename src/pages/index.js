@@ -1,6 +1,7 @@
 import FooterNav from '@/Components/common/FooterNav'
 import NavBar from '@/Components/common/NavBar'
 import Clients from '@/Components/home/Clients'
+import ContactUs from '@/Components/home/ContactUs'
 import FAQSection from '@/Components/home/FAQSection'
 import HeroSection from '@/Components/home/HeroSection'
 import HowToSetup from '@/Components/home/HowToSetup'
@@ -32,6 +33,7 @@ export default function Home() {
         <Integrations />
         <FAQSection />
         <PricingSection />
+        <ContactUs />
         <FooterNav />
       </main>
     </>
