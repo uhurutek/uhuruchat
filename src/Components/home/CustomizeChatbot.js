@@ -1,16 +1,7 @@
 import { Grid, Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles((theme) => ({
-    image: {
-        maxWidth: '100%',
-        height: 'auto',
-        // borderRadius: theme.spacing(1),
-    },
-}));
 
 const CustomizeChatbot = ({ title, text }) => {
-    const classes = useStyles();
 
     return (
         <Grid container spacing={3} mb={8}>
@@ -30,7 +21,7 @@ const CustomizeChatbot = ({ title, text }) => {
                 <img
                     src="https://via.placeholder.com/600x400" // Replace with your image URL
                     alt="Sample"
-                    className={classes.image}
+                    style={{ maxWidth: '100%', height: 'auto' }}
                 />
             </Grid>
         </Grid>
