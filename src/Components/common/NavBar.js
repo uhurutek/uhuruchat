@@ -1,5 +1,8 @@
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuIcon from '@mui/icons-material/Menu';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { SwipeableDrawer } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -130,7 +133,7 @@ function NavBar() {
                                         <Button
                                             onClick={toggleDrawer}
                                             sx={{
-                                                my: 2, display: { xs: 'none', md: 'block' }, color: '#d76227',
+                                                my: 2, display: { xs: 'none', md: 'block' }, color: '#9f4923',
                                                 '&:hover': {
 
                                                     color: '#9f4923',
@@ -141,51 +144,40 @@ function NavBar() {
                                         </Button>
                                     </Link>
                                 ))}
-                                <Link href="/registration">
-                                    <FacebookOutlinedIcon sx={{
-                                        display: {
-                                            xs: 'none', md: 'block', color: '#d76227',
+                                <Box sx={{ display: 'flex', gap: 2 }}>
+                                    <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer" >
+                                        <FacebookIcon sx={{
+                                            color: '#9f4923',
                                             '&:hover': {
-
-                                                color: '#9f4923',
+                                                color: '#d76227',
                                             },
-                                        }
-                                    }} />
-                                </Link>
-                                <Link href="/registration">
-                                    <FacebookOutlinedIcon sx={{
-                                        display: {
-                                            xs: 'none', md: 'block', color: '#d76227',
+                                        }} />
+                                    </Link>
+                                    <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer" >
+                                        <InstagramIcon sx={{
+                                            color: '#9f4923',
                                             '&:hover': {
-
-                                                color: '#9f4923',
+                                                color: '#d76227',
                                             },
-                                        }
-                                    }} />
-                                </Link>
-                                <Link href="/registration">
-                                    <FacebookOutlinedIcon sx={{
-                                        display: {
-                                            xs: 'none', md: 'block', color: '#d76227',
+                                        }} />
+                                    </Link>
+                                    <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer" >
+                                        <LinkedInIcon sx={{
+                                            color: '#9f4923',
                                             '&:hover': {
-
-                                                color: '#9f4923',
+                                                color: '#d76227',
                                             },
-                                        }
-                                    }} />
-                                </Link>
-                                <Link href="/registration">
-                                    <FacebookOutlinedIcon sx={{
-                                        display: {
-                                            xs: 'none', md: 'block', color: '#d76227',
+                                        }} />
+                                    </Link>
+                                    <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer" >
+                                        <WhatsAppIcon sx={{
+                                            color: '#d76227',
                                             '&:hover': {
-
-                                                color: '#9f4923',
+                                                color: '#d76227',
                                             },
-                                        }
-                                    }} />
-                                </Link>
-
+                                        }} />
+                                    </Link>
+                                </Box>
 
                                 <IconButton
                                     size="large"
@@ -198,7 +190,7 @@ function NavBar() {
                                         color: '#d76227',
                                         '&:hover': {
 
-                                            color: '#9f4923',
+                                            color: '#d76227',
                                         },
                                     }}
                                 >

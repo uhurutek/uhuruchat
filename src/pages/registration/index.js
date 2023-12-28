@@ -1,5 +1,6 @@
 
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { Container } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -24,6 +25,7 @@ export default function SignInSide() {
             password: data.get("password"),
         });
     };
+    const currentYear = new Date().getFullYear();
 
     return (
         <ThemeProvider theme={theme}>
@@ -74,7 +76,7 @@ export default function SignInSide() {
                         >
                             <form onSubmit={handleSubmit}>
                                 <Grid container spacing={2}>
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={12}>
                                         <TextField
                                             autoComplete="name"
                                             name="name"
@@ -89,7 +91,7 @@ export default function SignInSide() {
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={12}>
                                         <TextField
                                             required
                                             fullWidth
@@ -103,20 +105,7 @@ export default function SignInSide() {
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            autoComplete="organization"
-                                            name="organization"
-                                            required
-                                            fullWidth
-                                            id="organization"
-                                            label="Organization"
-                                            InputLabelProps={{
-                                                style: { color: '#d76227' },
 
-                                            }}
-                                        />
-                                    </Grid>
                                     <Grid item xs={6}>
                                         <TextField
                                             required
@@ -185,18 +174,31 @@ export default function SignInSide() {
                             </form>
                             <Grid container justifyContent="flex-end">
                                 <Grid item>
-                                    <Link href="#" variant="body2">
+                                    <Link href="#" variant="body2" sx={{
+                                        padding: '0.5rem',
+                                        color: '#d76227',
+                                        '&:hover': {
+
+                                            color: '#9f4923',
+                                        },
+                                    }}>
                                         Already have an account? Sign in
                                     </Link>
                                 </Grid>
                             </Grid>
+
+                        </Box>
+
+                    </Box>
+                    <Container >
+                        <Container >
                             <Grid container spacing={2}>
                                 <Grid item xs={12} sm={6}>
                                     <Button
                                         fullWidth
                                         variant="contained"
                                         sx={{
-                                            mt: 1, backgroundColor: '#800000',
+                                            backgroundColor: '#800000',
                                             '&:hover': {
 
                                                 backgroundColor: 'red',
@@ -210,17 +212,23 @@ export default function SignInSide() {
                                     <Button
                                         fullWidth
                                         variant="contained"
-                                        sx={{
-                                            mt: 1,
-                                        }}
+
                                     >
                                         Microsoft
                                     </Button>
                                 </Grid>
                             </Grid>
-                        </Box>
-                    </Box>
+                        </Container>
+                    </Container>
+                    <Typography variant="body2" align="center" color="text.secondary" sx={{ py: 2 }}>
+                        &copy; <span id="currentYear">{currentYear}</span>{' '}
+                        <strong>
+                            <span>UhuruChat</span>
+                        </strong>{' '}
+                        . All Rights Reserved | Developed by <strong> UhuruTek </strong>
+                    </Typography>
                 </Grid>
+
             </Grid>
         </ThemeProvider>
     );

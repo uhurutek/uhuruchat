@@ -8,7 +8,12 @@ const FooterNav = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer id="footer">
+        <footer id="footer" style={{
+            background: '#fff',
+            padding: '30px 0 30px 0',
+            borderTop: '1px solid #d76227',
+            borderBottom: '2px solid #e9ecee'
+        }}>
             <Box sx={{ bgcolor: 'background.default' }}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
@@ -29,24 +34,44 @@ const FooterNav = () => {
                                     Useful Links
                                 </Typography>
                                 <ul style={{ listStyleType: 'none', padding: 0 }}>
-                                    <li>
-                                        <Link href="#" color="inherit">
-                                            Home
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'} Home
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#about" color="inherit">
-                                            About us
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#about" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'}  About us
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#technology" color="inherit">
-                                            Technology
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#technology" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'} Technology
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#services" color="inherit">
-                                            Services
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#services" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'}   Services
                                         </Link>
                                     </li>
                                 </ul>
@@ -54,29 +79,49 @@ const FooterNav = () => {
                         </Grid>
 
                         <Grid item lg={3} md={6}>
-                            <Box sx={{ py: 3 }}>
+                            <Box sx={{ py: 3, }} >
                                 <Typography variant="h6" gutterBottom>
                                     Our Services
                                 </Typography>
-                                <ul style={{ listStyleType: 'none', padding: 0 }}>
-                                    <li>
-                                        <Link href="#services" color="inherit">
-                                            Software Development
+                                <ul style={{ listStyleType: 'none', padding: 0, }}>
+                                    <li style={{ marginBottom: '1rem' }} >
+                                        <Link href="#services" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'}  Software Development
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#services" color="inherit">
-                                            Web Development
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#services" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'} Web Development
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#services" color="inherit">
-                                            Mobile App Development
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#services" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'} Mobile App Development
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="#services" color="inherit">
-                                            AI/ML Solutions
+                                    <li style={{ marginBottom: '1rem' }}>
+                                        <Link href="#services" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
+                                            {'>'} AI/ML Solutions
                                         </Link>
                                     </li>
                                 </ul>
@@ -92,30 +137,63 @@ const FooterNav = () => {
                                     DOM-INNO PATIO, 2 Siddeshwari Road, B-1, Dhaka, 1217, BD
                                     <br />
                                     <strong>Phone:</strong>
-                                    <Link href="tel:+8801846412513" color="inherit">
-                                        +880 1846-412513
+                                    <Link href="tel:+8801846412513" sx={{
+                                        color: '#9f4923',
+                                        '&:hover': {
+                                            color: '#d76227',
+                                        },
+                                    }}>
+                                        {" "} +880 1846-412513
                                     </Link>
                                     <br />
                                     <strong>Email:</strong>
-                                    <Link href="mailto:info@uhurutek.com" color="inherit">
-                                        info@uhurutek.com
+                                    <Link href="mailto:info@uhurutek.com" sx={{
+                                        color: '#9f4923',
+                                        '&:hover': {
+                                            color: '#d76227',
+                                        },
+                                    }}>
+                                        {" "} info@uhurutek.com
                                     </Link>
                                 </Typography>
-                                <Box sx={{ mt: 3 }}>
-                                    <Typography variant="h6" gutterBottom>
-                                        Social Links
-                                    </Typography>
+                                <Box sx={{ mt: 1 }}>
                                     <Box sx={{ display: 'flex', gap: 2 }}>
-                                        <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+                                                color: '#d76227',
+                                            },
+                                        }}>
                                             <FacebookIcon />
                                         </Link>
-                                        <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+
+
+                                                color: '#d76227',
+                                            },
+                                        }}>
                                             <InstagramIcon />
                                         </Link>
-                                        <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+
+
+                                                color: '#d76227',
+                                            },
+                                        }}>
                                             <LinkedInIcon />
                                         </Link>
-                                        <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer">
+                                        <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer" sx={{
+                                            color: '#9f4923',
+                                            '&:hover': {
+
+
+                                                color: '#d76227',
+                                            },
+                                        }}>
                                             <WhatsAppIcon />
                                         </Link>
                                     </Box>
