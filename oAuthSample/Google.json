@@ -1,0 +1,53 @@
+// lookUp  
+{
+    "kind": "identitytoolkit#GetAccountInfoResponse",
+    "users": [
+      {
+        "localId": "1nJYvz3r5TfHB0enHS8yiUOPJtC2",
+        "email": "sshanto.cse@gmail.com",
+        "displayName": "Saiful Islam Shanto",
+        "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLQww26S2QGm8L5yBwv6akNqB2vjrpnYYUzWoSvhITdeA=s96-c",
+        "emailVerified": true,
+        "passwordUpdatedAt": 1634648669475,
+        "providerUserInfo": [
+          {
+            "providerId": "google.com",
+            "displayName": "Saiful Islam Shanto",
+            "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLQww26S2QGm8L5yBwv6akNqB2vjrpnYYUzWoSvhITdeA=s96-c",
+            "federatedId": "118380245796931174553",
+            "email": "sshanto.cse@gmail.com",
+            "rawId": "118380245796931174553"
+          }
+        ],
+        "validSince": "1704365789",
+        "lastLoginAt": "1704365789929",
+        "createdAt": "1634648669475",
+        "lastRefreshAt": "2024-01-04T10:56:29.929Z"
+      }
+    ]
+  }
+  
+
+  // signin
+
+  {
+    "federatedId": "https://accounts.google.com/118380245796931174553",
+    "providerId": "google.com",
+    "email": "sshanto.cse@gmail.com",
+    "emailVerified": true,
+    "firstName": "Saiful Islam",
+    "fullName": "Saiful Islam Shanto",
+    "lastName": "Shanto",
+    "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLQww26S2QGm8L5yBwv6akNqB2vjrpnYYUzWoSvhITdeA=s96-c",
+    "localId": "1nJYvz3r5TfHB0enHS8yiUOPJtC2",
+    "displayName": "Saiful Islam Shanto",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjUyNmM2YTg0YWMwNjcwMDVjZTM0Y2VmZjliM2EyZTA4ZTBkZDliY2MiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiU2FpZnVsIElzbGFtIFNoYW50byIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NMUXd3MjZTMlFHbThMNXlCd3Y2YWtOcUIydmpycG5ZWVV6V29TdmhJVGRlQT1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9tb3Rpb24taGVhbHRoLWNhcmUiLCJhdWQiOiJtb3Rpb24taGVhbHRoLWNhcmUiLCJhdXRoX3RpbWUiOjE3MDQzNjU4MzQsInVzZXJfaWQiOiIxbkpZdnozcjVUZkhCMGVuSFM4eWlVT1BKdEMyIiwic3ViIjoiMW5KWXZ6M3I1VGZIQjBlbkhTOHlpVU9QSnRDMiIsImlhdCI6MTcwNDM2NTgzNCwiZXhwIjoxNzA0MzY5NDM0LCJlbWFpbCI6InNzaGFudG8uY3NlQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTE4MzgwMjQ1Nzk2OTMxMTc0NTUzIl0sImVtYWlsIjpbInNzaGFudG8uY3NlQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.aloHJ4hT99uw7S8qNPREwso2X9USblavI88QBlLdfl37J4p74eU3LuuS8iBHRKLUYXVTyoO-4ZdaInZOYeQ24AJMne05KGebNUGsXyI21pop2YdNjk33QuZ7dDlGRocp9aCnfaNod-9b10Zsz43MaSLAc6YmJWFdQ0912QOG0gJeoN8gfRTTMT3P4DLGgAaOn7iVvgIaJrF-W2fTsckOZodg-tbsOU4O2hDGjyqR-WY7nWpshMWFZvxTqaBLvKWH5L4AOjF1dt4wHJ_Tl1lZn7cJqJYOPId0Q0JrMZPzp6WYrhWF1fojnsIutDDFxKG_rnQi_RzIYMWK-PqYFbFL8A",
+    "context": "",
+    "oauthAccessToken": "ya29.a0AfB_byAu1K5ILRKyD9gD2rFWA_p7pbTPIT752VfSEzog9RLv5MQtz5rm0Zoy6iLp_PjDVOJGqLMyEqPK3FbbL-ncj4FSRIEDHaOX5g_UNca_7t8t6p1DkxbwarobHVVFpaCI4STBdqQ2etU1J_9oPcZiLTjc9miwxQaCgYKAdwSARESFQHGX2MiR0Bl1qBsjF9wEaAzu6yp5w0169",
+    "oauthExpireIn": 3598,
+    "refreshToken": "AMf-vBzj2bYtF9s8F7vK1SxbsorgKwkJUeiayhUtpA_hcxPO2yeQ7WwbYmPQeHFDy7FHTNfnF8uMC3ZoaOJ88JZTAEnym6enIpOXSFG6zBxJoeN9IbdPv1K675FknYsu5hJc3PdEmaa5KNXkIdMZTVmNh65Sgr-KnKBwAVyfN3rwiDRF7fVKX0WEa23yHk-e5_hWQmhkV_R4ZjURJs--_4vJTMbBLQXhFRgjkKfRqYWRcJLDh85TIgKuIjHQNmqT9QGF49deHucFdJe9bRcaSlpOw-Lrx4STZyCaF0rU2eBa9uxvm-NitkgNrhAND32ztklcpg-zqiGI6mJI8RNITetrOZn9cwXyEpnM6hG4bZR7riAXvadbkCMhUaLHE9axTxAby8fXBBtDJlvYSyNirT4LEwOelAIotWHtWip9LvIaCs4Ri_gNlUxwT3i8dCdRre5ojbA2qgA7",
+    "expiresIn": "3600",
+    "oauthIdToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjkxNDEzY2Y0ZmEwY2I5MmEzYzNmNWEwNTQ1MDkxMzJjNDc2NjA5MzciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNzU5OTc0OTAzMDAyLXR2cHAydGQ0OXY1aDhkbWlvZWpzaDBiNzRobW1tYjZyLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNzU5OTc0OTAzMDAyLXR2cHAydGQ0OXY1aDhkbWlvZWpzaDBiNzRobW1tYjZyLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE4MzgwMjQ1Nzk2OTMxMTc0NTUzIiwiZW1haWwiOiJzc2hhbnRvLmNzZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InU5emwyb1F3cmw5WUsySXhiWkFMY2ciLCJpYXQiOjE3MDQzNjU4MzQsImV4cCI6MTcwNDM2OTQzNH0.XLqDtp8HFQv1cpfxtDznBa_Sl6T_I-7HNCPE4qfUMoIso4MhbXWhGHdZjTP0licrCwcqVEx7Dy1axvUFp2D89Le1d_L0Sqc1V2p0Supu03ZdSosB7O5e8Cqt_OomSViOfkKdxoBmA-AxWLi2eO9TQS2ZqQBQQ6RV4sGsS6Zh7dNVgPVFbIExBYhAAuMvvzhVCebp_E_nt0wJ8Ljlvf9P0BLZ2bu1igXh6qr0qL6GRqGmALb0vdvu-ExUtzVHeDigmBvI2Zp5uein-GPsv6SmgS_sMye2F12SBsTbbvUAP01KtbRPL35Me8_8wRjUIOeGlG8WhsiP6QSj4LWZPGoJPg",
+    "rawUserInfo": "{\"name\":\"Saiful Islam Shanto\",\"granted_scopes\":\"openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile\",\"id\":\"118380245796931174553\",\"verified_email\":true,\"given_name\":\"Saiful Islam\",\"locale\":\"en-GB\",\"family_name\":\"Shanto\",\"email\":\"sshanto.cse@gmail.com\",\"picture\":\"https://lh3.googleusercontent.com/a/ACg8ocLQww26S2QGm8L5yBwv6akNqB2vjrpnYYUzWoSvhITdeA=s96-c\"}",
+    "kind": "identitytoolkit#VerifyAssertionResponse"
+}
