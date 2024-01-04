@@ -5,7 +5,7 @@ import PdfUpload from "./PdfUpload";
 const HowToSetup = () => {
     return (
         <Container>
-            <Typography variant='h3' align='center' color='#9f4923' gutterBottom>
+            <Typography variant='h3' align='center' color='#602e13' gutterBottom>
                 How it works
             </Typography>
             <PdfUpload title="Share a link or PDF file" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cumque ratione illum nam reprehenderit fugiat. Ex eveniet nesciunt blanditiis optio." />

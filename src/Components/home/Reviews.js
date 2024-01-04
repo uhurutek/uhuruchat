@@ -31,7 +31,7 @@ const ReviewsCarousel = () => {
             <Typography
                 variant="h3"
                 align="center"
-                color="#9f4923"
+                color="#602e13"
                 gutterBottom
             >
                 Loved by our customers

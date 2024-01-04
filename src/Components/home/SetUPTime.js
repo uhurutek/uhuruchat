@@ -5,11 +5,11 @@ const SetUPTime = () => {
     return (
         <div style={{ paddingBottom: "25px" }}>
 
-            <Container align="center" maxWidth="lg" sx={{ pb: 4, pt: 8, border: '2px solid #9f4923', borderRadius: '7px' }}>
+            <Container align="center" maxWidth="lg" sx={{ pb: 4, pt: 8, border: '2px solid #602e13', borderRadius: '7px' }}>
                 <Typography variant="h3" sx={{
                     fontWeight: 'bold',
                     marginBottom: 5,
-                    color: '#9f4923',
+                    color: '#602e13',
                 }}>
                     5 minute set-up process
 
@@ -27,7 +27,7 @@ const SetUPTime = () => {
                         backgroundColor: '#d76227',
                         '&:hover': {
 
-                            backgroundColor: '#9f4923',
+                            backgroundColor: '#602e13',
                         },
 
                     }}>

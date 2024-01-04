@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const homeStyle = {
     backgroundColor: '#fff',
-    color: '#9f4923',
+    color: '#602e13',
     paddingTop: 40,
     paddingBottom: 40,
 }
@@ -39,7 +39,7 @@ const HeroSection = () => {
                                 backgroundColor: '#d76227',
                                 '&:hover': {
 
-                                    backgroundColor: "#9f4923",
+                                    backgroundColor: "#602e13",
                                 },
                             }}>
                                 Get Started

@@ -25,7 +25,7 @@ const tiers = [
         buttonText: "Sign up for free",
         buttonVariant: "outlined",
         backgroundColor: '#fff',
-        color: '#9f4923',
+        color: '#602e13',
     },
     {
         title: "Pro",
@@ -40,7 +40,7 @@ const tiers = [
         buttonText: "Get started",
         buttonVariant: "contained",
         backgroundColor: '#d76227',
-        HBackgroundColor: '#9f4923',
+        HBackgroundColor: '#602e13',
         color: 'dark',
     },
     {
@@ -56,7 +56,7 @@ const tiers = [
         buttonText: "Contact us",
         buttonVariant: "outlined",
         backgroundColor: '#fff',
-        color: '#9f4923',
+        color: '#602e13',
     },
 ];
 
@@ -73,7 +73,7 @@ export default function PricingSection() {
                 <Typography
                     variant="h3"
                     align="center"
-                    color="#9f4923"
+                    color="#602e13"
                     gutterBottom
                 >
                     Pricing
@@ -153,11 +153,11 @@ export default function PricingSection() {
                                 <CardActions>
                                     <Link href="/registration" style={{ textDecoration: 'none', width: '100%' }}>
                                         <Button sx={{
-                                            borderColor: '#9f4923',
+                                            borderColor: '#602e13',
                                             color: tier.color,
                                             backgroundColor: tier.backgroundColor,
                                             '&:hover': {
-                                                borderColor: '#9f4923',
+                                                borderColor: '#602e13',
                                                 backgroundColor: tier.HBackgroundColor,
                                             },
                                         }} fullWidth variant={tier.buttonVariant}>

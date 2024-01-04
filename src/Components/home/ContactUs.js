@@ -15,7 +15,7 @@ export default function ContactUs() {
         <>
             <Typography variant="h3"
                 align="center"
-                color="#9f4923"
+                color="#602e13"
                 gutterBottom
                 mb={2}>
                 Contact Us
@@ -93,7 +93,7 @@ export default function ContactUs() {
                                 backgroundColor: "#d76227",
                                 color: "#fff",
                                 "&:hover": {
-                                    backgroundColor: "#9f4923",
+                                    backgroundColor: "#602e13",
                                 },
                             }}
                         >

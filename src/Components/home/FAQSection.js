@@ -31,10 +31,10 @@ const data = {
 
 const styles = {
     // bgColor: 'white',
-    titleTextColor: "#9f4923",
-    rowTitleColor: "#9f4923",
+    titleTextColor: "#602e13",
+    rowTitleColor: "#602e13",
     // rowContentColor: 'grey',
-    arrowColor: "#9f4923",
+    arrowColor: "#602e13",
 };
 
 const config = {
@@ -43,7 +43,7 @@ const config = {
     tabFocus: true
 };
 const headerStyle = {
-    color: '#9f4923',
+    color: '#602e13',
     textAlign: 'center',
 };
 

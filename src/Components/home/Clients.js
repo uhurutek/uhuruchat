@@ -24,7 +24,7 @@ const Clients = () => {
             <Typography
                 variant="h3"
                 align="center"
-                color="#9f4923"
+                color="#602e13"
                 gutterBottom
             >
                 Trusted by 100+ businesses

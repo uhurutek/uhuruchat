@@ -16,7 +16,7 @@ const PdfUpload = ({ title, text }) => {
             </Grid>
             <Grid item xs={12} md={6}>
                 <div>
-                    <Typography variant="h5" color='#9f4923' gutterBottom>
+                    <Typography variant="h5" color='#602e13' gutterBottom>
                         {title}
                     </Typography>
                     <Typography variant="body1">
