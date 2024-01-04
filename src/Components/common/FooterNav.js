@@ -10,16 +10,17 @@ const FooterNav = () => {
     return (
         <footer id="footer" style={{
             background: '#fff',
-            padding: '30px 0 30px 0',
+            padding: '30px 0 0 0',
             borderTop: '1px solid #d76227',
-            borderBottom: '2px solid #e9ecee'
+            borderBottom: '2px solid #e9ecee',
+            color: "#364146"
         }}>
             <Box sx={{ bgcolor: 'background.default' }}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
                         <Grid item lg={4} md={6}>
                             <Box sx={{ py: 3 }}>
-                                <Typography variant="h6" gutterBottom>
+                                <Typography variant="h6" className="font-raleway" gutterBottom>
                                     UhuruTek
                                 </Typography>
                                 <Typography variant="body1">
@@ -30,13 +31,13 @@ const FooterNav = () => {
 
                         <Grid item lg={2} md={6}>
                             <Box sx={{ py: 3 }}>
-                                <Typography variant="h6" gutterBottom>
+                                <Typography variant="subtitle1" gutterBottom>
                                     Useful Links
                                 </Typography>
                                 <ul style={{ listStyleType: 'none', padding: 0 }}>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -46,7 +47,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#about" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -56,7 +57,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#technology" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -66,7 +67,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#services" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -80,13 +81,13 @@ const FooterNav = () => {
 
                         <Grid item lg={3} md={6}>
                             <Box sx={{ py: 3, }} >
-                                <Typography variant="h6" gutterBottom>
+                                <Typography variant="subtitle1" gutterBottom>
                                     Our Services
                                 </Typography>
                                 <ul style={{ listStyleType: 'none', padding: 0, }}>
                                     <li style={{ marginBottom: '1rem' }} >
                                         <Link href="#services" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -96,7 +97,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#services" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -106,7 +107,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#services" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -116,7 +117,7 @@ const FooterNav = () => {
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <Link href="#services" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -130,7 +131,7 @@ const FooterNav = () => {
 
                         <Grid item lg={3} md={6}>
                             <Box sx={{ py: 3 }}>
-                                <Typography variant="h6" gutterBottom>
+                                <Typography variant="subtitle1" gutterBottom>
                                     Contact Us
                                 </Typography>
                                 <Typography variant="body1">
@@ -138,7 +139,7 @@ const FooterNav = () => {
                                     <br />
                                     <strong>Phone:</strong>
                                     <Link href="tel:+8801846412513" sx={{
-                                        color: '#9f4923',
+                                        color: '#602e13',
                                         '&:hover': {
                                             color: '#d76227',
                                         },
@@ -148,7 +149,7 @@ const FooterNav = () => {
                                     <br />
                                     <strong>Email:</strong>
                                     <Link href="mailto:info@uhurutek.com" sx={{
-                                        color: '#9f4923',
+                                        color: '#602e13',
                                         '&:hover': {
                                             color: '#d76227',
                                         },
@@ -159,7 +160,8 @@ const FooterNav = () => {
                                 <Box sx={{ mt: 1 }}>
                                     <Box sx={{ display: 'flex', gap: 2 }}>
                                         <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
+
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -167,7 +169,7 @@ const FooterNav = () => {
                                             <FacebookIcon />
                                         </Link>
                                         <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
 
 
@@ -177,7 +179,7 @@ const FooterNav = () => {
                                             <InstagramIcon />
                                         </Link>
                                         <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
 
 
@@ -187,7 +189,7 @@ const FooterNav = () => {
                                             <LinkedInIcon />
                                         </Link>
                                         <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer" sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
                                             '&:hover': {
 
 
@@ -204,9 +206,9 @@ const FooterNav = () => {
                 </Container>
             </Box>
 
-            <Box sx={{ bgcolor: 'background.paper' }}>
+            <Box sx={{ bgcolor: '#f7f8f9', paddingBottom: '10px', paddingTop: '10px' }}>
                 <Container maxWidth="lg">
-                    <Typography variant="body2" align="center" color="text.secondary" sx={{ py: 2 }}>
+                    <Typography variant="body2" align="center" color="black" sx={{ py: 2 }}>
                         &copy; <span id="currentYear">{currentYear}</span>{' '}
                         <strong>
                             <span>UhuruTek</span>

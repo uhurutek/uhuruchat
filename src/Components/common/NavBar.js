@@ -13,15 +13,33 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'About', 'url': '/about' }, { 'name': 'Contact', 'url': '/contact' }];
-
 function NavBar() {
+
     const anchor = 'left';
     const [state, setState] = useState({
         left: false,
     });
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            if (offset > 0) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     const toggleDrawer = (anchor, open) => (event) => {
         console.log("object");
         if (
@@ -35,11 +53,15 @@ function NavBar() {
         setState({ ...state, [anchor]: open });
     };
     return (
-        <AppBar sx={{ backgroundColor: "#fff" }} position="sticky">
+        <AppBar sx={{
+            backgroundColor: "#fff", position: isSticky ? 'sticky' : 'static',
+            top: isSticky ? 0 : 'auto',
+            zIndex: isSticky ? 1000 : 'auto',
+        }} >
             <Container>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Typography
+                        {/* <Typography
                             variant="h6"
                             noWrap
                             component="a"
@@ -55,18 +77,18 @@ function NavBar() {
                                 color: '#d76227',
                                 '&:hover': {
 
-                                    color: '#9f4923',
+                                    color: '#602e13',
                                 },
                             }}
                         >
                             LOGO
-                        </Typography>
-
+                        </Typography> */}
+                        {/* // eslint-disable-next-line @next/next/no-img-element */}
+                        <Image src="https://uhurutek.com/assets/img/uhurutek_logo.svg" alt="logo" width={150} height={50} />
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 
                             <Menu
                                 id="menu-appbar"
-                                // anchorEl={anchorElNav}
                                 anchorOrigin={{
                                     vertical: 'bottom',
                                     horizontal: 'left',
@@ -94,7 +116,7 @@ function NavBar() {
                                         onClick={toggleDrawer(anchor, false)}
                                         onKeyDown={toggleDrawer(anchor, false)}
                                     >
-                                        <div style={{ textAlign: 'right', backgroundColor: '#9f4923', }}>
+                                        <div style={{ textAlign: 'right', backgroundColor: '#602e13', }}>
                                             <Button
                                                 sx={{
                                                     display: 'inline-block',
@@ -107,10 +129,17 @@ function NavBar() {
                                             </Button>
                                         </div>
 
-
+                                        {/* Mobile  */}
                                         {pages.map((page) => (
                                             <Link key={page.name} href={page.url} style={{ textDecoration: 'none' }}>
-                                                <MenuItem onClick={toggleDrawer}>
+                                                <MenuItem onClick={toggleDrawer} sx={{
+                                                    color: '#602e13',
+                                                    '&:hover': {
+                                                        color: '#d76227',
+                                                    },
+
+
+                                                }}>
                                                     <Typography textAlign="center">{page.name}</Typography>
                                                 </MenuItem>
                                             </Link>
@@ -121,23 +150,26 @@ function NavBar() {
                         </Box>
                         {/* mobile */}
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-
-
-
                         </Box>
 
                         <Box sx={{ flexGrow: 0 }}>
                             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                {/* Desktop   */}
                                 {pages.map((page) => (
                                     <Link key={page.name} href={page.url} style={{ textDecoration: 'none', display: { xs: 'none', md: 'flex' } }}>
                                         <Button
                                             onClick={toggleDrawer}
                                             sx={{
-                                                my: 2, display: { xs: 'none', md: 'block' }, color: '#9f4923',
+                                                my: 2, display: { xs: 'none', md: 'block' },
+                                                textTransform: 'none',
+                                                color: '#602e13',
                                                 '&:hover': {
 
-                                                    color: '#9f4923',
+                                                    color: '#d76227',
                                                 },
+                                                fontFamily: 'sans-serif',
+                                                fontSize: 15,
+                                                padding: '0px 18px',
                                             }}
                                         >
                                             {page.name}
@@ -147,23 +179,31 @@ function NavBar() {
                                 <Box sx={{ display: 'flex', gap: 2 }}>
                                     <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer" >
                                         <FacebookIcon sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
+                                            fontSize: 21,
+                                            marginTop: .3,
                                             '&:hover': {
                                                 color: '#d76227',
+
                                             },
                                         }} />
                                     </Link>
                                     <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer" >
                                         <InstagramIcon sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
+                                            fontSize: 21,
+                                            marginTop: .3,
                                             '&:hover': {
                                                 color: '#d76227',
+
                                             },
                                         }} />
                                     </Link>
                                     <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer" >
                                         <LinkedInIcon sx={{
-                                            color: '#9f4923',
+                                            color: '#602e13',
+                                            fontSize: 21,
+                                            marginTop: .3,
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -171,7 +211,9 @@ function NavBar() {
                                     </Link>
                                     <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer" >
                                         <WhatsAppIcon sx={{
-                                            color: '#d76227',
+                                            color: '#602e13',
+                                            fontSize: 21,
+                                            marginTop: .3,
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
@@ -187,7 +229,7 @@ function NavBar() {
                                     onClick={toggleDrawer(anchor, true)}
                                     sx={{
                                         display: { xs: 'block', md: 'none' },
-                                        color: '#d76227',
+                                        color: '#602e13',
                                         '&:hover': {
 
                                             color: '#d76227',
