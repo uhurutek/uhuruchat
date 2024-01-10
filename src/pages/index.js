@@ -1,5 +1,6 @@
 import FooterNav from '@/Components/common/FooterNav'
-import NavBar from '@/Components/common/NavBar'
+import ProductSiteNav from '@/Components/common/ProductSiteNav'
+import WebsiteNav from '@/Components/common/WebsiteNav'
 import Clients from '@/Components/home/Clients'
 import ContactUs from '@/Components/home/ContactUs'
 import FAQSection from '@/Components/home/FAQSection'
@@ -23,7 +24,8 @@ export default function Home() {
         <link rel="icon" href="https://uhurutek.com/assets/img/favicon.png" />
       </Head>
       <main>
-        <NavBar />
+        <WebsiteNav />
+        <ProductSiteNav />
         <HeroSection />
         <SetUPTime />
         <Clients />

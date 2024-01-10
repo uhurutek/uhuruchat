@@ -16,8 +16,8 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'About', 'url': '/about' }, { 'name': 'Contact', 'url': '/contact' }];
-function NavBar() {
+const pages = [{ 'name': 'Home', 'url': 'https://uhurutek.com/#hero' }, { 'name': 'About Us', 'url': 'https://uhurutek.com/#about' }, { 'name': 'Technology', 'url': 'https://uhurutek.com/#technology' }, { 'name': 'Services', 'url': 'https://uhurutek.com/#services' }, { 'name': 'Contact', 'url': 'https://uhurutek.com/#contact' }];
+function WebsiteNav() {
 
     const anchor = 'left';
     const [state, setState] = useState({
@@ -54,7 +54,7 @@ function NavBar() {
     };
     return (
         <AppBar sx={{
-            backgroundColor: "#fff", position: isSticky ? 'sticky' : 'static',
+            backgroundColor: "#fff", position: 'static',
             top: isSticky ? 0 : 'auto',
             zIndex: isSticky ? 1000 : 'auto',
         }} >
@@ -109,7 +109,7 @@ function NavBar() {
 
                                         {/* Mobile  */}
                                         {pages.map((page) => (
-                                            <Link key={page.name} href={page.url} style={{ textDecoration: 'none' }}>
+                                            <Link key={page.name} href={page.url} target="_blank" style={{ textDecoration: 'none' }}>
                                                 <MenuItem onClick={toggleDrawer} sx={{
                                                     color: '#602e13',
                                                     '&:hover': {
@@ -134,7 +134,7 @@ function NavBar() {
                             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 {/* Desktop   */}
                                 {pages.map((page) => (
-                                    <Link key={page.name} href={page.url} style={{ textDecoration: 'none', display: { xs: 'none', md: 'flex' } }}>
+                                    <Link key={page.name} href={page.url} target="_blank" style={{ textDecoration: 'none', display: { xs: 'none', md: 'flex' } }}>
                                         <Button
                                             onClick={toggleDrawer}
                                             sx={{
@@ -225,4 +225,4 @@ function NavBar() {
         </AppBar >
     );
 }
-export default NavBar;
+export default WebsiteNav;
