@@ -11,7 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'About', 'url': '/about' }, { 'name': 'Contact', 'url': '/contact' }];
+const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'How to get started', 'url': '#' }, { 'name': 'FAQ', 'url': '#' }];
 function ProductSiteNav() {
 
     const anchor = 'left';

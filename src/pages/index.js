@@ -1,16 +1,10 @@
 import FooterNav from '@/Components/common/FooterNav'
 import ProductSiteNav from '@/Components/common/ProductSiteNav'
 import WebsiteNav from '@/Components/common/WebsiteNav'
-import ContactUs from '@/Components/home/ContactUs'
 import FAQSection from '@/Components/home/FAQSection'
 import HeroSection from '@/Components/home/HeroSection'
-import HowToSetup from '@/Components/home/HowToSetup'
-import Integrations from '@/Components/home/Integration'
-import PricingSection from '@/Components/home/PricingSection'
-import ReviewsCarousel from '@/Components/home/Reviews'
-import SetUPTime from '@/Components/home/SetUPTime'
-import TabSwitcher from '@/Components/home/TabPannel'
-import TryIt from '@/Components/home/TryIt'
+import HowItWorks from '@/Components/home/HowItWorks'
+import WhyChoseUs from '@/Components/home/WhyChoseUs'
 import Head from 'next/head'
 
 
@@ -27,15 +21,9 @@ export default function Home() {
         <WebsiteNav />
         <ProductSiteNav />
         <HeroSection />
-        <SetUPTime />
-        <TabSwitcher />
-        <HowToSetup />
-        <TryIt />
-        <ReviewsCarousel />
-        <Integrations />
+        <HowItWorks />
+        <WhyChoseUs />
         <FAQSection />
-        <PricingSection />
-        <ContactUs />
         <FooterNav />
       </main>
     </>

@@ -19,7 +19,8 @@
     "nextjs-fonts": "^0.22.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-faq-component": "^1.3.4"
+    "react-faq-component": "^1.3.4",
+    "react-player": "^2.14.1"
   },
   "devDependencies": {
     "eslint": "^8",
