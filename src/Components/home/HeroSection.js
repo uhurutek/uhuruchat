@@ -1,6 +1,7 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
+import Image from 'next/image';
 import Link from 'next/link';
-
+import banner from '../../assets/images/uhuruchat_banner.png';
 
 const homeStyle = {
     backgroundColor: '#fff',
@@ -24,12 +25,12 @@ const HeroSection = () => {
                             fontWeight: 'bold',
                             marginBottom: 5,
                         }}>
-                            Transform Your Business with Chatbots
+                            Your AI Companion in Every Conversation
                         </Typography>
                         <Typography variant="body1" sx={{ marginBottom: 2, }}>
-                            Engage customers, automate tasks, and boost sales with our AI-powered chatbot solutions.
+                            A Virtual Partner You Can Always Count On. Experience Conversational AI Unlike Any Other.
                         </Typography>
-                        <Link href="/registration" style={{ textDecoration: 'none' }}>
+                        <Link href={`${process.env.NEXT_PUBLIC_PORTAL_URL}/register`} style={{ textDecoration: 'none' }}>
                             <Button variant="contained" sx={{
                                 marginTop: 1,
                                 padding: '8px 32px',
@@ -42,22 +43,18 @@ const HeroSection = () => {
                                     backgroundColor: "#602e13",
                                 },
                             }}>
-                                Get Started
+                                Get Started for FREE!
                             </Button>
                         </Link>
                     </Grid>
 
                     <Grid item xs={12} md={6} >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                            src="https://via.placeholder.com/600x400"
-                            alt="Chatbot Illustration"
-                            style={imageStyle}
-                        />
+                        <Image src={banner} height={400} width={600} alt="Chatbot Illustration" style={imageStyle} />
+
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </div >
     );
 };
 

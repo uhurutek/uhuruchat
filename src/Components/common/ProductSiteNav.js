@@ -1,8 +1,4 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuIcon from '@mui/icons-material/Menu';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { SwipeableDrawer } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -13,7 +9,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'About', 'url': '/about' }, { 'name': 'Contact', 'url': '/contact' }];
@@ -61,8 +56,10 @@ function ProductSiteNav() {
             <Container>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
+                        <Typography variant="h5" component="div" sx={{
+                            color: '#602e13', fontWeight: 'bold',
+                        }}>UhuruChat</Typography>
 
-                        <Image src="https://uhurutek.com/assets/img/uhurutek_logo.svg" alt="logo" width={150} height={50} />
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 
                             <Menu
@@ -155,50 +152,7 @@ function ProductSiteNav() {
                                         </Button>
                                     </Link>
                                 ))}
-                                <Box sx={{ display: 'flex', gap: 2 }}>
-                                    <Link href="https://www.facebook.com/uhurutek" target="_blank" rel="noopener noreferrer" >
-                                        <FacebookIcon sx={{
-                                            color: '#602e13',
-                                            fontSize: 21,
-                                            marginTop: .3,
-                                            '&:hover': {
-                                                color: '#d76227',
 
-                                            },
-                                        }} />
-                                    </Link>
-                                    <Link href="https://www.instagram.com/uhurutek" target="_blank" rel="noopener noreferrer" >
-                                        <InstagramIcon sx={{
-                                            color: '#602e13',
-                                            fontSize: 21,
-                                            marginTop: .3,
-                                            '&:hover': {
-                                                color: '#d76227',
-
-                                            },
-                                        }} />
-                                    </Link>
-                                    <Link href="https://www.linkedin.com/company/uhurutek" target="_blank" rel="noopener noreferrer" >
-                                        <LinkedInIcon sx={{
-                                            color: '#602e13',
-                                            fontSize: 21,
-                                            marginTop: .3,
-                                            '&:hover': {
-                                                color: '#d76227',
-                                            },
-                                        }} />
-                                    </Link>
-                                    <Link href="whatsapp://send?phone=8801846412513" target="_blank" rel="noopener noreferrer" >
-                                        <WhatsAppIcon sx={{
-                                            color: '#602e13',
-                                            fontSize: 21,
-                                            marginTop: .3,
-                                            '&:hover': {
-                                                color: '#d76227',
-                                            },
-                                        }} />
-                                    </Link>
-                                </Box>
 
                                 <IconButton
                                     size="large"

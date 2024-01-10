@@ -1,7 +1,6 @@
 import FooterNav from '@/Components/common/FooterNav'
 import ProductSiteNav from '@/Components/common/ProductSiteNav'
 import WebsiteNav from '@/Components/common/WebsiteNav'
-import Clients from '@/Components/home/Clients'
 import ContactUs from '@/Components/home/ContactUs'
 import FAQSection from '@/Components/home/FAQSection'
 import HeroSection from '@/Components/home/HeroSection'
@@ -10,6 +9,7 @@ import Integrations from '@/Components/home/Integration'
 import PricingSection from '@/Components/home/PricingSection'
 import ReviewsCarousel from '@/Components/home/Reviews'
 import SetUPTime from '@/Components/home/SetUPTime'
+import TabSwitcher from '@/Components/home/TabPannel'
 import TryIt from '@/Components/home/TryIt'
 import Head from 'next/head'
 
@@ -28,7 +28,7 @@ export default function Home() {
         <ProductSiteNav />
         <HeroSection />
         <SetUPTime />
-        <Clients />
+        <TabSwitcher />
         <HowToSetup />
         <TryIt />
         <ReviewsCarousel />
