@@ -13,32 +13,7 @@
 .font-raleway {
   font-family: "Raleway", sans-serif;
 }
-.css-z2eky3-MuiTypography-root {
-  font-family: "Open Sans", sans-serif;
-}
-.css-ahj2mt-MuiTypography-root {
-  font-family: "Open Sans", sans-serif;
-}
-.css-1iz3971-MuiTypography-root-MuiLink-root {
-  font-family: "Open Sans", sans-serif;
-}
-.css-10egq61 {
-  font-family: "Open Sans", sans-serif;
-}
-.css-18k87ye-MuiTypography-root {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-.css-1wniyei-MuiTypography-root {
-  font-family: "Raleway", sans-serif;
-  font-size: 17px;
-  margin: 0 0 20px 0;
-  line-height: 1;
-  font-weight: 700;
-}
+
 .MuiLink-root {
   text-decoration: none !important;
 }

@@ -61,29 +61,7 @@ function NavBar() {
             <Container>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        {/* <Typography
-                            variant="h6"
-                            noWrap
-                            component="a"
-                            href="#app-bar-with-responsive-menu"
-                            sx={{
-                                mr: 2,
-                                display: { xs: 'flex', md: 'flex' },
-                                fontFamily: 'monospace',
-                                fontWeight: 700,
-                                letterSpacing: '.3rem',
 
-                                textDecoration: 'none',
-                                color: '#d76227',
-                                '&:hover': {
-
-                                    color: '#602e13',
-                                },
-                            }}
-                        >
-                            LOGO
-                        </Typography> */}
-                        {/* // eslint-disable-next-line @next/next/no-img-element */}
                         <Image src="https://uhurutek.com/assets/img/uhurutek_logo.svg" alt="logo" width={150} height={50} />
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 
@@ -167,6 +145,7 @@ function NavBar() {
 
                                                     color: '#d76227',
                                                 },
+
                                                 fontFamily: 'sans-serif',
                                                 fontSize: 15,
                                                 padding: '0px 18px',
