@@ -1,35 +1,31 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import Image from 'next/image';
-const TwoPartGrid = ({ title, textContent, image, contentPosition }) => {
+const TwoPartGrid = ({ title, textContent, image, contentPosition, imageGrid, textGrid, imageHight, imageWidth }) => {
     const isContentOnLeft = contentPosition;
 
     const contentGridItem = (
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={textGrid}>
             <>
-                <Typography variant="h3" color='#602e13' sx={{ my: 2 }} gutterBottom>
-                    {title}
-                </Typography>
-                <Typography variant="h6">
-                    {textContent}
-                </Typography>
+                {title}
+                {textContent}
             </>
         </Grid>
     );
 
     const imageGridItem = (
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={imageGrid} >
             <Image
                 src={image}
                 alt="Sample"
-                width={600}
-                height={400}
-                style={{ maxWidth: '100%' }}
+                width={imageWidth}
+                height={imageHight}
+                style={{ maxWidth: '100%', marginTop: "9px", border: '1px solid #eaeaea', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
             />
         </Grid>
     );
 
     return (
-        <Grid container spacing={3} mb={8}>
+        <Grid container spacing={3} >
             <Grid item xs={12}>
                 <Grid container spacing={3} justifyContent="center">
                     {isContentOnLeft ? contentGridItem : imageGridItem}

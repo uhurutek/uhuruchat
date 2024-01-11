@@ -43,61 +43,66 @@ export default function TabPanel() {
                     ))}
                 </Stepper>
                 <div>
-                    <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
+                    <div style={{ marginTop: "16px", marginBottom: "8px", paddingTop: "8px", paddingBottom: "8px" }}>
 
                         {
-                            activeStep === 0 && <TwoPartGrid key={activeStep} title={"Create Account"} textContent={<>
-                                <li>Click on “registration”</li>
-                                <li>Provide your name, email and set password</li>
-                                <li>Verify email address </li>
-                            </>} image={registrationImage} contentPosition="left" />
+                            activeStep === 0 && <TwoPartGrid key={activeStep} imageGrid={8} textGrid={4} imageHight={400} imageWidth={800} title={<Typography variant='h4' color="#602e13"
+                                gutterBottom>Create Account</Typography>} textContent={<>
+                                    <Typography variant='body1'> <li>Click on “registration”</li></Typography>
+                                    <Typography variant='body1'> <li>Provide your name, email and set password</li></Typography>
+                                    <Typography variant='body1'>   <li>Verify email address </li></Typography>
+                                </>} image={registrationImage} contentPosition="left" />
                         }
                         {
-                            activeStep === 1 && <TwoPartGrid key={activeStep} title={"Create Bot"} textContent={<>
-                                <li>Personalize your bot
-                                </li>
-                                <li>
-                                    Give it a  name, avatar, color, and data source (URL, doc, pdf etc),
+                            activeStep === 1 && <TwoPartGrid imageGrid={7} textGrid={5} key={activeStep} imageHight={400} imageWidth={800} title={<Typography variant='h4' color="#602e13"
+                                gutterBottom>Create Bot</Typography>} textContent={<>
+                                    <Typography variant='body1'>  <li>Personalize your bot
+                                    </li></Typography>
+                                    <Typography variant='body1'>  <li>
+                                        Give it a  name, avatar, color, and data source (URL, doc, pdf etc),
 
-                                </li>
-                                <li>
-                                    Feed insights to generate more accurate information
-                                </li>
-                            </>} image={registrationImage} />
+                                    </li></Typography>
+                                    <Typography variant='body1'>    <li>
+                                        Feed insights to generate more accurate information
+                                    </li></Typography>
+                                </>} image={registrationImage} />
                         }
                         {
-                            activeStep === 2 && <TwoPartGrid key={activeStep} title={"Train Bot"} textContent={<>
-                                <li>
-                                    Click on “Train Bot”
-                                </li>
-                                <li>
-                                    Provide Website URL and knowledge base portal, or upload any document to train.Takes only few minutes
-                                </li><li>
+                            activeStep === 2 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
+                                gutterBottom>Train Bot</Typography>} textContent={<>
+                                    <Typography variant='body1'> <li>
+                                        Click on “Train Bot”
+                                    </li></Typography>
+                                    <Typography variant='body1'>   <li>
+                                        Provide Website URL and knowledge base portal, or upload any document to train.Takes only few minutes
+                                    </li></Typography>
+                                    <Typography variant='body1'><li>
 
-                                    Test your bot in Chat Playground
-                                </li>
-                            </>} image={registrationImage} contentPosition="left" />
+                                        Test your bot in Chat Playground
+                                    </li></Typography>
+                                </>} image={registrationImage} contentPosition="left" />
                         }
                         {
-                            activeStep === 3 && <TwoPartGrid key={activeStep} title={"Integrate  Bot"} textContent={<>
-                                <li>Click “Integrate Bot”
+                            activeStep === 3 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
+                                gutterBottom>Integrate  Bot</Typography>} textContent={<>
+                                    <Typography variant='body1'> <li>Click “Integrate Bot”
 
-                                </li>
-                                <li>
-                                    Copy the provided JavaScript code snippet and put in your website source to Integrate the Uhuruchat widget in your website.
-                                </li>
-                                <li>
-                                    Click “Run” and it’s ready to use!
-                                </li>
-                            </>} image={registrationImage} />
+                                    </li></Typography>
+                                    <Typography variant='body1'> <li>
+                                        Copy the provided JavaScript code snippet and put in your website source to Integrate the Uhuruchat widget in your website.
+                                    </li></Typography>
+                                    <Typography variant='body1'>  <li>
+                                        Click “Run” and it’s ready to use!
+                                    </li></Typography>
+                                </>} image={registrationImage} />
                         }
-                    </Typography>
+                    </div>
                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Button
-                            color="inherit"
+
                             disabled={activeStep === 0}
                             onClick={handleBack}
-                            sx={{ mr: 1, border: "1px solid #d76227" }}
+                            sx={{ mr: 1, border: "1px solid #d76227", color: "#d76227" }}
                         >
                             Back
                         </Button>

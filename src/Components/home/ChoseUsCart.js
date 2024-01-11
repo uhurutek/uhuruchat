@@ -25,12 +25,10 @@ const ChoseUsCart = ({ title, description, icon }) => {
                         {icon}
                     </Grid>
                     <Grid item>
-                        <Typography variant="h6" align="center" gutterBottom>
+                        <Typography variant="h6" align="center" color={'#602e13'} gutterBottom>
                             {title}
                         </Typography>
-                        <Typography variant="body1" gutterBottom>
-                            {description}
-                        </Typography>
+                        {description}
 
 
                     </Grid>

@@ -6,14 +6,14 @@ const YouTubeVideo = ({ url }) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '70vh', /* Set the height of the container */
-        }}>
+            height: '70vh',
+        }} >
             <ReactPlayer
                 width="100%"
                 height="100%"
                 playing={true}
                 controls
-                url={url} /* Use the 'url' prop passed to the component */
+                url={url}
             />
         </div>
     );

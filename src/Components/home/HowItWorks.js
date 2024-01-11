@@ -9,7 +9,7 @@ const HowItWorks = () => {
                 align="center"
                 color="#602e13"
                 gutterBottom
-                mb={4}
+                mb={2}
             >
                 How to get started
             </Typography>

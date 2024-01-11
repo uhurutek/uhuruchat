@@ -1,3 +1,4 @@
+
 import MenuIcon from '@mui/icons-material/Menu';
 import { SwipeableDrawer } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
@@ -9,8 +10,10 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import logo from '../../assets/images/uhuruchat_logo_horizontal.svg';
 const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'How to get started', 'url': '#' }, { 'name': 'FAQ', 'url': '#' }];
 function ProductSiteNav() {
 
@@ -56,9 +59,9 @@ function ProductSiteNav() {
             <Container>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Typography variant="h5" component="div" sx={{
-                            color: '#602e13', fontWeight: 'bold',
-                        }}>UhuruChat</Typography>
+
+                        <Image src={logo} alt="UhuruChat" width={170} height={58} />
+
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 

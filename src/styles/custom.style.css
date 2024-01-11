@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 /* Global CSS file or your custom styles */
 /* global.css */
@@ -21,12 +22,27 @@
   text-decoration: none !important;
 }
 .MuiTypography-root {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
 }
 p {
   font-size: 14px;
+  font-family: "Raleway", sans-serif;
 }
-
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* .MuiTypography-body1,
+.MuiTypography-body2 {
+  font-family: "Raleway", sans-serif !important;
+}
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6 {
+  font-family: "Raleway", sans-serif !important;
+} */
 /* base color */
 
 /* html,
