@@ -25,10 +25,11 @@ const HeroSection = () => {
                             fontWeight: 'bold',
                             marginBottom: 5,
                         }}>
-                            Your AI Companion in Every Conversation
+                            Your Gateway to Intelligent Conversations
                         </Typography>
                         <Typography variant="body1" sx={{ marginBottom: 2, }}>
-                            A Virtual Partner You Can Always Count On. Experience Conversational AI Unlike Any Other.
+                            Seamless, Smart, and Easy to Train Chatbot Solution – Redefining Customer Experience with AI Brilliance.
+
                         </Typography>
                         <Link href={`${process.env.NEXT_PUBLIC_PORTAL_URL}/register`} style={{ textDecoration: 'none' }}>
                             <Button variant="contained" sx={{

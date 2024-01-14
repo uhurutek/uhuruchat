@@ -4,11 +4,11 @@ const TwoPartGrid = ({ title, textContent, image, contentPosition, imageGrid, te
     const isContentOnLeft = contentPosition;
 
     const contentGridItem = (
-        <Grid item xs={12} md={textGrid}>
-            <>
+        <Grid item xs={12} md={textGrid} sx={{ display: "flex", alignItems: "center" }}>
+            <div>
                 {title}
                 {textContent}
-            </>
+            </div>
         </Grid>
     );
 

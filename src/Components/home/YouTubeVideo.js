@@ -12,7 +12,8 @@ const YouTubeVideo = ({ url }) => {
                 width="100%"
                 height="100%"
                 playing={true}
-                controls
+                loop={true}
+                controls={false}
                 url={url}
             />
         </div>

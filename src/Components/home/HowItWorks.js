@@ -4,7 +4,7 @@ import YouTubeVideo from "./YouTubeVideo";
 
 const HowItWorks = () => {
     return (
-        <Container>
+        <Container id='howWork'>
             <Typography variant="h3"
                 align="center"
                 color="#602e13"
@@ -13,7 +13,16 @@ const HowItWorks = () => {
             >
                 How to get started
             </Typography>
-            <YouTubeVideo url='https://www.youtube.com/watch?v=wWgIAphfn2U' />
+            <Typography variant="body1"
+                align="center"
+                color="#602e13"
+                gutterBottom
+                mb={2}
+            >
+                Get empowered with AI-powered customer support and sales, craft your path to success.
+            </Typography>
+
+            <YouTubeVideo url='https://youtu.be/wwrPL2CWg1I?si=pXwv1nKQtBZZUQ7L' />
 
             <TabPanel />
         </Container>

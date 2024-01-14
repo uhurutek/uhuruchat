@@ -50,7 +50,7 @@ const headerStyle = {
 
 const FAQSection = () => {
     return (
-        <Container sx={{
+        <Container id="faq" sx={{
             pb: 7
         }}>
             <div style={headerStyle}>

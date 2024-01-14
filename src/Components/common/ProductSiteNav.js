@@ -14,7 +14,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import logo from '../../assets/images/uhuruchat_logo_horizontal.svg';
-const pages = [{ 'name': 'Home', 'url': '/' }, { 'name': 'How to get started', 'url': '#' }, { 'name': 'FAQ', 'url': '#' }];
+const pages = [{ 'name': 'How it works', 'url': '/#howWork' }, { 'name': 'FAQ', 'url': '#faq' }];
 function ProductSiteNav() {
 
     const anchor = 'left';
@@ -60,7 +60,7 @@ function ProductSiteNav() {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
 
-                        <Image src={logo} alt="UhuruChat" width={170} height={58} />
+                        <Image src={logo} alt="UhuruChat" width={150} height={50} />
 
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -146,7 +146,7 @@ function ProductSiteNav() {
                                                     color: '#d76227',
                                                 },
 
-                                                fontFamily: 'sans-serif',
+                                                // fontFamily: 'sans-serif',
                                                 fontSize: 15,
                                                 padding: '0px 18px',
                                             }}

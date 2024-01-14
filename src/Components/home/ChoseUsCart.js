@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 2,
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         borderRadius: 2,
+        backgroundColor: '#f5f5f5',
     },
     icon: {
         width: 7,

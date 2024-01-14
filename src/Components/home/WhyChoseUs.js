@@ -2,8 +2,8 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { Container, Grid, Typography } from '@mui/material';
 import ChoseUsCart from './ChoseUsCart';
 
-
-
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 
 const WhyChoseUs = () => {
     return (
@@ -24,40 +24,44 @@ const WhyChoseUs = () => {
 
             </Typography>
             <Grid container justifyContent="center" spacing={3}>
-                <Grid item xs={12} sm={6} md={4}>
-                    <ChoseUsCart
-                        title="Your Most Efficient Employee "
-                        description={
-                            <>
-                                <Typography variant='body1'> <li>No more missed inquiries. Ensuring customer support that never sleeps (24/7 support)</li></Typography>
-                                <Typography variant='body1'><li>Provides real-time reply that mimics human touch.</li></Typography>
-                                <Typography variant='body1'><li>
-                                    Reduce your human workload by letting Uhuruchat handle basic ticket resolution.
-                                </li></Typography>
-                                <br></br><br></br><br></br> <br></br><br></br><br></br>
-                            </>
-                        }
-                        icon={<AcUnitIcon />}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <ChoseUsCart
-                        title="AI Powered Customer Support"
-                        description={
-                            <>
-                                <Typography variant='body1'>  <li>Leverages on advanced GPT-3.5 turbo language models from OpenAI, offering exceptional capabilities.
+                <Grid item xs={12} sm={8} md={8}>
+                    <Grid container justifyContent="center" spacing={3}>
+                        <Grid item xs={12} sm={12} md={12}>
+                            <ChoseUsCart
+                                title="Your Most Efficient Employee "
+                                description={
+                                    <>
+                                        <Typography variant='body1'> <li>No more missed inquiries. Ensuring customer support that never sleeps (24/7 support)</li></Typography>
+                                        <Typography variant='body1'><li>Provides real-time reply that mimics human touch.</li></Typography>
+                                        <Typography variant='body1'><li>
+                                            Reduce your human workload by letting Uhuruchat handle basic ticket resolution.
+                                        </li></Typography>
+                                    </>
+                                }
+                                icon={<AcUnitIcon />}
+                            />
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12}>
+                            <ChoseUsCart
+                                title="AI Powered Customer Support"
+                                description={
+                                    <>
+                                        <Typography variant='body1'>  <li>Leverages on advanced GPT-3.5 turbo language models from OpenAI, offering exceptional capabilities.
 
-                                </li></Typography>
-                                <Typography variant='body1'><li>Generate leads from your website visitors who engage with UhuruChat bot</li></Typography>
-                                <Typography variant='body1'><li>
-                                    Retrain your bot to keep updated by training it with the latest contents and knowledge base. </li></Typography>
-                                <br></br><br></br><br></br><br></br>
-                            </>
-                        }
-                        icon={<AcUnitIcon />}
-                    />
+                                        </li></Typography>
+                                        <Typography variant='body1'><li>Generate leads from your website visitors who engage with UhuruChat bot</li></Typography>
+                                        <Typography variant='body1'><li>
+                                            Retrain your bot to keep updated by training it with the latest contents and knowledge base. </li></Typography>
+
+                                    </>
+                                }
+                                icon={<SmartToyIcon />}
+                            />
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+
+                <Grid item xs={12} sm={4} md={4}>
                     <ChoseUsCart
                         title="Easy Development, Integration, and use"
                         description={
@@ -70,10 +74,13 @@ const WhyChoseUs = () => {
                                 <Typography variant='body1'>   <li>
                                     You can Integrate the chat widget in your website using the generated instructions.
                                 </li></Typography>
-                                <b></b>
+                                <br></br>  <br></br>  <br></br>
+
+
+
                             </>
                         }
-                        icon={<AcUnitIcon />}
+                        icon={<PrecisionManufacturingIcon />}
                     />
                 </Grid>
             </Grid>

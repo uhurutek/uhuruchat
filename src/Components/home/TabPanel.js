@@ -1,14 +1,17 @@
 import { Container, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Step from '@mui/material/Step';
 import StepButton from '@mui/material/StepButton';
 import Stepper from '@mui/material/Stepper';
 import { useState } from 'react';
+import createBotImage from '../../assets/images/create_bot.png';
+import integrateBotImage from "../../assets/images/integrate_bot.png";
 import registrationImage from '../../assets/images/register.png';
+import trainBotImage from '../../assets/images/train-chatbot.png';
+
 import TwoPartGrid from './TwoPartGrid';
 
-const steps = ['Create Account', 'Create Bot', 'Trining Bot', 'Integrate Bot'];
+const steps = ['Register', 'Create ', 'Train', 'Integrate'];
 
 export default function TabPanel() {
     const [activeStep, setActiveStep] = useState(0);
@@ -65,7 +68,7 @@ export default function TabPanel() {
                                     <Typography variant='body1'>    <li>
                                         Feed insights to generate more accurate information
                                     </li></Typography>
-                                </>} image={registrationImage} />
+                                </>} image={createBotImage} />
                         }
                         {
                             activeStep === 2 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
@@ -80,7 +83,7 @@ export default function TabPanel() {
 
                                         Test your bot in Chat Playground
                                     </li></Typography>
-                                </>} image={registrationImage} contentPosition="left" />
+                                </>} image={trainBotImage} contentPosition="left" />
                         }
                         {
                             activeStep === 3 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
@@ -94,10 +97,10 @@ export default function TabPanel() {
                                     <Typography variant='body1'>  <li>
                                         Click “Run” and it’s ready to use!
                                     </li></Typography>
-                                </>} image={registrationImage} />
+                                </>} image={integrateBotImage} />
                         }
                     </div>
-                    <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                    {/* <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Button
 
                             disabled={activeStep === 0}
@@ -113,7 +116,7 @@ export default function TabPanel() {
 
                             {activeStep === 3 ? 'Finished' : 'Next'}
                         </Button>
-                    </Box>
+                    </Box> */}
 
 
                 </div>
