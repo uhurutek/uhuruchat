@@ -36,17 +36,17 @@ const FooterNav = () => {
                                 </Typography>
                                 <ul style={{ listStyleType: 'none', padding: 0 }}>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#" sx={{
+                                        <Link href="/" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} Home
+                                            {'>'} UhuruChat
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#about" sx={{
+                                        <Link href="https://uhurutek.com/#about" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
@@ -56,7 +56,7 @@ const FooterNav = () => {
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#technology" sx={{
+                                        <Link href="https://uhurutek.com/#technology" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
@@ -66,7 +66,7 @@ const FooterNav = () => {
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#services" sx={{
+                                        <Link href="https://uhurutek.com/#services" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
@@ -86,7 +86,7 @@ const FooterNav = () => {
                                 </Typography>
                                 <ul style={{ listStyleType: 'none', padding: 0, }}>
                                     <li style={{ marginBottom: '1rem' }} >
-                                        <Link href="#services" sx={{
+                                        <Link href="https://uhurutek.com/#services" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
@@ -106,7 +106,7 @@ const FooterNav = () => {
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#services" sx={{
+                                        <Link href="https://uhurutek.com/#services" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
@@ -116,7 +116,7 @@ const FooterNav = () => {
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
-                                        <Link href="#services" sx={{
+                                        <Link href="https://uhurutek.com/#services" sx={{
                                             color: '#602e13',
                                             '&:hover': {
                                                 color: '#d76227',
