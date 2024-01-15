@@ -23,7 +23,7 @@ const data = {
             content: "UhuruChat supports doc, pdf, CSV utf-8 format to extract information."
         },
         {
-            title: "Which GPT model is Uhuru based on?",
+            title: "Which GPT model is UhuruChat based on?",
             content: "UhuruChat utilizes advanced GPT-3.5 turbo language models from OpenAI, offering exceptional capabilities for natural language processing, question-answering, and conversation generation."
         }
     ]
