@@ -42,7 +42,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} UhuruChat
+                                            UhuruChat
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -52,7 +52,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'}  About us
+                                            About us
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -62,7 +62,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} Technology
+                                            Technology
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -72,7 +72,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'}   Services
+                                            Services
                                         </Link>
                                     </li>
                                 </ul>
@@ -92,7 +92,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'}  Software Development
+                                            Software Development
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -102,7 +102,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} Web Development
+                                            Web Development
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -112,7 +112,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} Mobile App Development
+                                            Mobile App Development
                                         </Link>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -122,7 +122,7 @@ const FooterNav = () => {
                                                 color: '#d76227',
                                             },
                                         }}>
-                                            {'>'} AI/ML Solutions
+                                            AI/ML Solutions
                                         </Link>
                                     </li>
                                 </ul>

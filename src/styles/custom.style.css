@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Railway", sans-serif;
 }
 
 .MuiTypography-h1,
@@ -15,7 +16,7 @@
 .MuiTypography-h4,
 .MuiTypography-h5,
 .MuiTypography-h6 {
-  font-family: "IBM Plex Sans Condensed", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
 }
 p,
 .MuiTypography-body1,

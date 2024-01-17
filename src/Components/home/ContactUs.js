@@ -18,7 +18,7 @@ export default function ContactUs() {
                 color="#602e13"
                 gutterBottom
                 mb={2}>
-                Contact Us
+                Contact us
             </Typography>
 
             <Box

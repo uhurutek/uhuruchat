@@ -25,10 +25,10 @@ const HeroSection = () => {
                             fontWeight: 'bold',
                             marginBottom: 5,
                         }}>
-                            Your Gateway to Intelligent Conversations
+                            Your gateway to intelligent conversations
                         </Typography>
                         <Typography variant="body1" sx={{ marginBottom: 2, }}>
-                            Seamless, Smart, and Easy to Train Chatbot Solution – Redefining Customer Experience with AI Brilliance.
+                            Seamless, smart, and easy to train chatbot solution – redefining customer experience with AI brilliance.
 
                         </Typography>
                         <Link href={`${process.env.NEXT_PUBLIC_PORTAL_URL}/register`} style={{ textDecoration: 'none' }}>
@@ -36,6 +36,7 @@ const HeroSection = () => {
                                 marginTop: 1,
                                 padding: '8px 32px',
                                 borderRadius: 24,
+                                textTransform: 'none',
                                 fontSize: '1rem',
                                 fontWeight: 'bold',
                                 backgroundColor: '#d76227',
@@ -44,7 +45,7 @@ const HeroSection = () => {
                                     backgroundColor: "#602e13",
                                 },
                             }}>
-                                Get Started for FREE!
+                                Get started for FREE
                             </Button>
                         </Link>
                     </Grid>

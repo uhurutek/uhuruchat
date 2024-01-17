@@ -58,7 +58,7 @@ function WebsiteNav() {
             top: isSticky ? 0 : 'auto',
             zIndex: isSticky ? 1000 : 'auto',
         }} >
-            <Container>
+            <Container style={{ padding: 0 }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
 

@@ -56,8 +56,8 @@ function ProductSiteNav() {
             top: isSticky ? 0 : 'auto',
             zIndex: isSticky ? 1000 : 'auto',
         }} >
-            <Container>
-                <Container maxWidth="xl">
+            <Container style={{ padding: 0 }}>
+                <Container maxWidth="xl" >
                     <Toolbar disableGutters>
 
                         <Image src={logo} alt="UhuruChat" width={150} height={50} />

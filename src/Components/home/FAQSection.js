@@ -3,8 +3,8 @@ import Faq from "react-faq-component";
 const data = {
     rows: [
         {
-            title: "What is Uhuruchat?",
-            content: "Uhuruchat is an AI Chatbot builder for creating a personalized customer support system. It allows you to create and deploy your own custom GPT chatbot by uploading your website link or any PDF."
+            title: "What is UhuruChat?",
+            content: "UhuruChat is an AI Chatbot builder for creating a personalized customer support system. It allows you to create and deploy your own custom GPT chatbot by uploading your website link or any PDF."
         },
         {
             title: "Can I give instructions or customize my bot?",
@@ -12,7 +12,7 @@ const data = {
         },
         {
             title: "How do I embed the chatbot into my website?",
-            content: "Simply copy the provided JavaScript code snippet and put it in your website source to integrate the Uhuruchat widget into your website."
+            content: "Simply copy the provided JavaScript code snippet and put it in your website source to integrate the UhuruChat widget into your website."
         },
         {
             title: "Does UhuruChat support multiple website links?",
@@ -36,6 +36,7 @@ const styles = {
     rowTitleColor: "#602e13",
     // rowContentColor: 'grey',
     arrowColor: "#602e13",
+    fontFamily: "'Railway', sans-serif !important",
 };
 
 const config = {
@@ -54,13 +55,15 @@ const FAQSection = () => {
             pb: 7
         }}>
             <div style={headerStyle}>
-                <Typography variant="h3" sx={{ my: 4, pt: 4 }}>FAQ</Typography>
+                <Typography variant="h3" sx={{ my: 4, pt: 4 }}>Frequently asked questions</Typography>
             </div>
-            <Faq
-                data={data}
-                styles={styles}
-                config={config}
-            />
+            <div style={{ fontFamily: 'Railway' }}>
+                <Faq
+                    data={data}
+                    styles={styles}
+                    config={config}
+                />
+            </div>
         </Container>
     );
 };

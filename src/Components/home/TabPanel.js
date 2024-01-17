@@ -50,7 +50,7 @@ export default function TabPanel() {
 
                         {
                             activeStep === 0 && <TwoPartGrid key={activeStep} imageGrid={8} textGrid={4} imageHight={400} imageWidth={800} title={<Typography variant='h4' color="#602e13"
-                                gutterBottom>Create Account</Typography>} textContent={<>
+                                gutterBottom>Register</Typography>} textContent={<>
                                     <Typography variant='body1'> <li>Click on “registration”</li></Typography>
                                     <Typography variant='body1'> <li>Provide your name, email and set password</li></Typography>
                                     <Typography variant='body1'>   <li>Verify email address </li></Typography>
@@ -58,7 +58,7 @@ export default function TabPanel() {
                         }
                         {
                             activeStep === 1 && <TwoPartGrid imageGrid={7} textGrid={5} key={activeStep} imageHight={400} imageWidth={800} title={<Typography variant='h4' color="#602e13"
-                                gutterBottom>Create Bot</Typography>} textContent={<>
+                                gutterBottom>Create</Typography>} textContent={<>
                                     <Typography variant='body1'>  <li>Personalize your bot
                                     </li></Typography>
                                     <Typography variant='body1'>  <li>
@@ -72,7 +72,7 @@ export default function TabPanel() {
                         }
                         {
                             activeStep === 2 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
-                                gutterBottom>Train Bot</Typography>} textContent={<>
+                                gutterBottom>Train</Typography>} textContent={<>
                                     <Typography variant='body1'> <li>
                                         Click on “Train Bot”
                                     </li></Typography>
@@ -87,7 +87,7 @@ export default function TabPanel() {
                         }
                         {
                             activeStep === 3 && <TwoPartGrid imageGrid={7} textGrid={5} imageHight={400} imageWidth={800} key={activeStep} title={<Typography variant='h4' color="#602e13"
-                                gutterBottom>Integrate  Bot</Typography>} textContent={<>
+                                gutterBottom>Integrate</Typography>} textContent={<>
                                     <Typography variant='body1'> <li>Click “Integrate Bot”
 
                                     </li></Typography>
