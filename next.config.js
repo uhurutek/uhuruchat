@@ -16,7 +16,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "/uhuruchat",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
 
   /**
    * Disable server-based image optimization. Next.js does not support
